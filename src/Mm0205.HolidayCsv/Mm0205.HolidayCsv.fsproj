@@ -3,6 +3,13 @@
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Title>Mm0205.HolidayCsv</Title>
+        <Authors>munenaga</Authors>
+        <Description>Japanese holiday csv file reader.</Description>
+        <Copyright>Copyright (c) 2022 Masakazu Munenaga</Copyright>
+        <PackageProjectUrl>https://github.com/mm0205/Mm0205.HolidayCsv</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/mm0205/Mm0205.HolidayCsv/blob/main/LICENSE.md</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/mm0205/Mm0205.HolidayCsv</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
