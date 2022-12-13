@@ -1,4 +1,8 @@
 <Project>
+    <!--
+    この記述を行わないと、ビルドに失敗する。
+    詳細は https://github.com/NuGet/Home/issues/11949 を参照。
+    -->
     <ItemGroup Condition=" '$(EnableCentralPackageVersions)' != 'false' ">
         <!--
         Workaround the issue where FSharp SDK adds implicit PackageReference items but doesn't mark them as such
@@ -6,6 +10,6 @@
         -->
         <PackageReference Update="FSharp.Core"
                           Condition="'$(MSBuildProjectExtension)' == '.fsproj' And '$(DisableImplicitFSharpCoreReference)' != 'true' And '$(UpdateImplicitFSharpCoreReference)' != 'false'"
-                          IsImplicitlyDefined="true" />
+                          IsImplicitlyDefined="true"/>
     </ItemGroup>
 </Project>

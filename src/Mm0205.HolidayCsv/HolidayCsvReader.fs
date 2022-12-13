@@ -23,6 +23,7 @@ module HolidayCsvReader =
     let private getOrDefaultEncoding =
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
         Option.defaultValue (Encoding.GetEncoding("Shift_JIS"))
+        
 
     /// <summary>
     /// 祝日CSVをStreamから読み込む。
@@ -36,10 +37,10 @@ module HolidayCsvReader =
 
         let read2 () =
             let encoding = getOrDefaultEncoding encoding
-            use sr = new StreamReader(stream, encoding = encoding)
             let mutable holidays = []
 
             task {
+                use sr = new StreamReader(stream, encoding = encoding)
                 while not sr.EndOfStream do
                     let! holiday = sr.ReadLineAsync()
                     holidays <- List.append holidays [ holiday ]

@@ -5,15 +5,18 @@
 
 ## インストール
 
+```shell
+dotnet add Mm0205.HolidayCsv
+```
 
 ## 使い方
 
 ```csharp
-using Mm0205.HolidayCsv;
+Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+using var ms = new MemoryStream(Encoding.GetEncoding("Shift_JIS").GetBytes(TestCsvText));
+var holidaysResult = await HolidayCsvReader.read(ms, null);
 
-var loader = new HolidayCsvLoader();
-
-loader.LoadFromWebAsync();
-
+holidaysResult.IsOk.Should().BeTrue();
+holidaysResult.ResultValue.Length.Should().Be(3);
 ```
 

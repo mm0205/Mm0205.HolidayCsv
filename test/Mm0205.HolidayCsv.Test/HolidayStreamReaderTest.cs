@@ -22,15 +22,15 @@ public class HolidayStreamReaderTest
         holidaysResult.IsOk.Should().BeTrue();
         holidaysResult.ResultValue.Length.Should().Be(3);
     }
-    
-        [TestMethod]
-        public async Task TestLoadFromSJisStreamAsync()
-        {
-            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-            using var ms = new MemoryStream(Encoding.GetEncoding("Shift_JIS").GetBytes(TestCsvText));
-            var holidaysResult = await HolidayCsvReader.read(ms, null);
-    
-            holidaysResult.IsOk.Should().BeTrue();
-            holidaysResult.ResultValue.Length.Should().Be(3);
-        }
+
+    [TestMethod]
+    public async Task TestLoadFromSJisStreamAsync()
+    {
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+        using var ms = new MemoryStream(Encoding.GetEncoding("Shift_JIS").GetBytes(TestCsvText));
+        var holidaysResult = await HolidayCsvReader.read(ms, null);
+
+        holidaysResult.IsOk.Should().BeTrue();
+        holidaysResult.ResultValue.Length.Should().Be(3);
+    }
 }
