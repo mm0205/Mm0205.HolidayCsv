@@ -2,11 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9B71F642-F145-4234-808D-2FB44506BFB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mm0205.HolidayCsv", "src\Mm0205.HolidayCsv\Mm0205.HolidayCsv.csproj", "{178C5A74-29BD-4D93-9987-54F79C406BE0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6CAB6316-FF43-4FA0-9DFB-CDF335B3DA03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mm0205.HolidayCsv.Test", "test\Mm0205.HolidayCsv.Test\Mm0205.HolidayCsv.Test.csproj", "{5C90BE83-B588-4425-B439-D4236F43249C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mm0205.HolidayCsv", "src\Mm0205.HolidayCsv\Mm0205.HolidayCsv.fsproj", "{51EB4011-944E-4BA9-84F8-0D51722ED4B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,17 +14,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{178C5A74-29BD-4D93-9987-54F79C406BE0} = {9B71F642-F145-4234-808D-2FB44506BFB6}
 		{5C90BE83-B588-4425-B439-D4236F43249C} = {6CAB6316-FF43-4FA0-9DFB-CDF335B3DA03}
+		{51EB4011-944E-4BA9-84F8-0D51722ED4B2} = {9B71F642-F145-4234-808D-2FB44506BFB6}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{178C5A74-29BD-4D93-9987-54F79C406BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{178C5A74-29BD-4D93-9987-54F79C406BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{178C5A74-29BD-4D93-9987-54F79C406BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{178C5A74-29BD-4D93-9987-54F79C406BE0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C90BE83-B588-4425-B439-D4236F43249C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C90BE83-B588-4425-B439-D4236F43249C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C90BE83-B588-4425-B439-D4236F43249C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C90BE83-B588-4425-B439-D4236F43249C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51EB4011-944E-4BA9-84F8-0D51722ED4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EB4011-944E-4BA9-84F8-0D51722ED4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EB4011-944E-4BA9-84F8-0D51722ED4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EB4011-944E-4BA9-84F8-0D51722ED4B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -11,14 +11,10 @@ public class HolidayTest
         var date = new DateOnly(2022, 12, 3);
         const string name = "テスト祝日";
 
-        var sut = new Holiday
-        {
-            Date = date,
-            Name = name
-        };
+        var sut = Holiday.from(date, name);
 
-        sut.Date.Should().Be(date);
-        sut.Name.Should().Be(name);
+        Holiday.date(sut).Should().Be(date);
+        Holiday.name(sut).Should().Be(name);
 
     }
 
@@ -26,18 +22,18 @@ public class HolidayTest
     [DynamicData(nameof(ValidDateTexts))]
     public void TestTryParseShouldSucceed(string text, int y, int m, int d, string expectedName)
     {
-        var result = Holiday.TryParse(text);
-        result.IsSuccess.Should().BeTrue();
-        result.Value.Date.Should().Be(new DateOnly(y, m, d));
-        result.Value.Name.Should().Be(expectedName);
+        var result = Holiday.parse(text);
+        result.IsOk.Should().BeTrue();
+        Holiday.date(result.ResultValue).Should().Be(new DateOnly(y, m, d));
+        Holiday.name(result.ResultValue).Should().Be(expectedName);
     }
 
     [TestMethod]
     [DynamicData(nameof(InvalidDateTexts))]
     public void TestTryParseShouldFail(string text)
     {
-        var result = Holiday.TryParse(text);
-        result.IsFailed.Should().BeTrue();
+        var result = Holiday.parse(text);
+        result.IsError.Should().BeTrue();
     }
 
     public static IEnumerable<object[]> ValidDateTexts

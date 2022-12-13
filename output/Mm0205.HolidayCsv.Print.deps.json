@@ -1,0 +1,159 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0/linux-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {},
+    ".NETCoreApp,Version=v7.0/linux-x64": {
+      "Mm0205.HolidayCsv.Print/1.0.0": {
+        "dependencies": {
+          "Microsoft.NET.Build.Containers": "0.2.7",
+          "Mm0205.HolidayCsv": "1.0.0"
+        },
+        "runtime": {
+          "Mm0205.HolidayCsv.Print.dll": {}
+        }
+      },
+      "FluentResults/3.15.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentResults.dll": {
+            "assemblyVersion": "3.15.1.0",
+            "fileVersion": "3.15.1.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.322.12309"
+          }
+        }
+      },
+      "Microsoft.NET.Build.Containers/0.2.7": {},
+      "System.IO.Abstractions/18.0.1": {
+        "dependencies": {
+          "TestableIO.System.IO.Abstractions": "18.0.1",
+          "TestableIO.System.IO.Abstractions.Wrappers": "18.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Abstractions.dll": {
+            "assemblyVersion": "18.0.0.0",
+            "fileVersion": "18.0.1.23596"
+          }
+        }
+      },
+      "System.Text.Encoding.CodePages/7.0.0": {},
+      "System.Threading.Tasks.Extensions/4.5.4": {},
+      "TestableIO.System.IO.Abstractions/18.0.1": {
+        "runtime": {
+          "lib/net6.0/TestableIO.System.IO.Abstractions.dll": {
+            "assemblyVersion": "18.0.0.0",
+            "fileVersion": "18.0.1.23596"
+          }
+        }
+      },
+      "TestableIO.System.IO.Abstractions.Wrappers/18.0.1": {
+        "dependencies": {
+          "TestableIO.System.IO.Abstractions": "18.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/TestableIO.System.IO.Abstractions.Wrappers.dll": {
+            "assemblyVersion": "18.0.0.0",
+            "fileVersion": "18.0.1.23596"
+          }
+        }
+      },
+      "Mm0205.HolidayCsv/1.0.0": {
+        "dependencies": {
+          "FluentResults": "3.15.1",
+          "Microsoft.NET.Build.Containers": "0.2.7",
+          "System.IO.Abstractions": "18.0.1",
+          "System.Text.Encoding.CodePages": "7.0.0"
+        },
+        "runtime": {
+          "Mm0205.HolidayCsv.dll": {}
+        },
+        "resources": {
+          "en/Mm0205.HolidayCsv.resources.dll": {
+            "locale": "en"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mm0205.HolidayCsv.Print/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentResults/3.15.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F5zd5+5cOG0Kn0rAXsoA3B2+7FHkCEHpz7d+tdcKZ25P1iufk1MqtfKR9fLZ+vTv9hekVpj9hi3h5Fv5/rQTzw==",
+      "path": "fluentresults/3.15.1",
+      "hashPath": "fluentresults.3.15.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dzB2Cgg+JmrouhjkcQGzSFjjvpwlq353i8oBQO2GWNjCXSzhbtBRUf28HSauWe7eib3wYOdb3tItdjRwAdwCSg==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512"
+    },
+    "Microsoft.NET.Build.Containers/0.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ie5I/rofXd4DVtrEOMjPUtutGCepKLKanRLo0yWyS8fuXQu0lKM3hto8HBKdDdePCcOVEKzwvMW2BBTsJNRnVw==",
+      "path": "microsoft.net.build.containers/0.2.7",
+      "hashPath": "microsoft.net.build.containers.0.2.7.nupkg.sha512"
+    },
+    "System.IO.Abstractions/18.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kyqYIu5Fjnrj9IO8G2jkYPIYvjhEoOBxd0+CRZyKqeuF2NNEUR4UyHMmxv8+F1cRmWQe5RUqYcXotJbQbWKapA==",
+      "path": "system.io.abstractions/18.0.1",
+      "hashPath": "system.io.abstractions.18.0.1.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LSyCblMpvOe0N3E+8e0skHcrIhgV2huaNcjUUEa8hRtgEAm36aGkRoC8Jxlb6Ra6GSfF29ftduPNywin8XolzQ==",
+      "path": "system.text.encoding.codepages/7.0.0",
+      "hashPath": "system.text.encoding.codepages.7.0.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "TestableIO.System.IO.Abstractions/18.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nacJfL4mGObg8Ttn3ZCJZ2u9z8ivG43xgUJvQQLKCmDnle4m49NYNOLk8cqB4iPdSqVhnUSy+qcIryWgDHCqeg==",
+      "path": "testableio.system.io.abstractions/18.0.1",
+      "hashPath": "testableio.system.io.abstractions.18.0.1.nupkg.sha512"
+    },
+    "TestableIO.System.IO.Abstractions.Wrappers/18.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3vGUMEHgL7l1Jyvv0WdDzCrwV6xKRhI2xVgWHQDbfVsye/ZBflhWFyVrCanPHzm0r0WSl0ug8DuaKwmelHlLCw==",
+      "path": "testableio.system.io.abstractions.wrappers/18.0.1",
+      "hashPath": "testableio.system.io.abstractions.wrappers.18.0.1.nupkg.sha512"
+    },
+    "Mm0205.HolidayCsv/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
